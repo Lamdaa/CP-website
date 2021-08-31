@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ComPROGRAMMING</title>
+  <link rel="stylesheet" type="text/css" href="programs_stylling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+    <a href="https://shivajiraojondhalecoe.org.in/"> <img src="images/college.jpg"></a>
+   </div>
+   
+    <div class="menu">
+      <a href="index.html">HOME</a>
+      <a href="programs.html">PROGRAMS</a>
+      <a href="algorithm.html">BLOCK DIAGRAM</a>
+      <a href="About US.html">ABOUT US</a>
+      <a href="contactus.html">CONTACT US</a>
+    </div>
+    </nav> 
+    
+
+<div class="row">
+  <div class="leftcolumn">
+    
+    <div class="card">
+      <h1>PROGRAMS</h1>
+      <p>Programming language theory (PLT) is a branch of computer science that deals with the design, implementation, analysis, characterization, and classification of programming languages and of their individual features. It falls within the discipline of computer science, both depending on and affecting mathematics, software engineering, linguistics and even cognitive science. It has become a well-recognized branch of computer science, and an active research area, with results published in numerous journals dedicated to PLT, as well as in general computer science and engineering publications.</p>
+
+      <marquee behavior="scroll" direction="leftcolumn">
+        <h2>LIST OF PROGRAMMS IN FIRST YEAR "C,JAVA,PYTHON"</h2>
+      </marquee>
+      <details>
+ <summary>Write a program to calculate area and perimeter of rectangle</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language1')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language2')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language3')">PYTHON</button>
+   </div>
+
+   <div id="language1" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h> <br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+int length, breadth, area,perimeter;<br>
+printf("Enter the Length of Rectangle : ");<br>
+scanf("%d", &length);<br>
+printf("Enter the Breadth of Rectangle : ");<br>
+scanf("%d", &breadth);<br>
+area = length * breadth;<br>
+perimeter=2*(length+breadth);<br>
+printf("Area of Rectangle : %d", area);<br>
+printf("\nPerimeter of Rectangle : %d", perimeter);<br>
+getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language2" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>  
+
+       import java.util.Scanner;<br>
+       public class Area_Perimeter<br> 
+       {<br>
+       public static void main(String[] args) <br>
+       {<br>
+        int l, b, perimeter, area;<br>
+        Scanner s = new Scanner(System.in);<br>
+        System.out.print("Enter length of rectangle:");<br>
+        l = s.nextInt();<br>
+        System.out.print("Enter breadth of rectangle:");<br>
+        b = s.nextInt();<br>
+        perimeter = 2 * (l + b);<br>
+        System.out.println("Perimeter of rectangle:"+perimeter);<br>
+        area = l * b;<br>
+        System.out.println("Area of rectangle:"+area);<br>
+        }<br>
+        }<br>
+
+</p> 
+   </div>
+
+   <div id="language3" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>l=int(input("Length : "))<br>
+w=int(input("Width : "))<br>
+area=l*w<br>
+perimeter=2*(l+w)<br>
+print("Area of Rectangle : ",area)<br>
+print("Perimeter of Rectangle : ",perimeter)<br>
+
+</p>
+   </div>
+
+
+      
+      </details>
+
+
+      <details>
+<summary>Write a program to check whether given year is leap year or not using   conditional operator</summary>
+  <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language4')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language5')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language6')">PYTHON</button>
+   </div>
+
+   <div id="language4" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+int year;<br>
+printf("Enter the year\n");<br>
+scanf("%d",&year);<br>
+((year%4==0&&year%100!=0)||(year%400==0))?printf("Leap Year"):printf("Not Leap
+Year");<br>
+getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language5" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>
+
+        import java.util.Scanner;<br>
+        class Leapyear<br>
+        {<br>
+        public static void main(String arg[])<br> 
+        {<br>
+        long a,y,c;<br>
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.print("enter  any  calendar year :");<br>             y=sc.nextLong();<br>      
+        if(y!=0)<br>
+        {<br>
+        a=(y%400==0)?(c=1):((y%100==0)?(c=0):((y%4==0)?(c=1):(c=0)));<br>       
+        if(a==1) <br>
+        System.out.println(y+" is a leap year");  <br>     
+                else<br>
+        System.out.println(y+" is not a leap year"); <br>                      
+        }<br>
+        else<br>
+        System.out.println("year zero does not exist "); <br>                      
+        }<br>
+        }<br>
+
+</p> 
+   </div>
+
+   <div id="language6" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>Using if<br>
+# Python Program to Check Leap Year using If Statement<br>
+
+year = int(input("Please Enter the Year Number you wish: "))<br>
+
+if (( year%400 == 0)or (( year%4 == 0 ) and ( year%100 != 0))):<br><br>
+    print("%d is a Leap Year" %year)<br>
+    else:<br>
+        print("%d is Not the Leap Year" %year)<br><br><br>
+
+Using elif<br>
+# Python Program to Check Leap Year using Elif Statement<br>
+
+year = int(input("Please Enter the Year Number you wish: "))<br><br>
+
+if (year%400 == 0):<br>
+          print("%d is a Leap Year" %year)<br>
+          elif (year%100 == 0):<br>
+                    print("%d is Not the Leap Year" %year)<br>
+                    elif (year%4 == 0):<br>
+                              print("%d is a Leap Year" %year)<br>
+                              else:<br>
+                                        print("%d is Not the Leap Year" %year)<br>
+<br><br>
+
+Using nested if<br>
+# Python Program to Check Leap Year using Nested If Statement
+<br>
+year = int(input("Please Enter the Year Number you wish: "))<br>
+
+if(year%4 == 0):<br>
+    if(year%100 == 0):<br>
+            if(year%400 == 0):<br>
+                        print("%d is a Leap Year" %year)<br>
+                                else:<br>
+                                            print("%d is Not the Leap Year" %year)<br>
+                                                else:<br>
+                                                        print("%d is a Leap Year" %year)<br>
+                                                        else:<br>
+                                                            print("%d is Not the Leap Year" %year)<br>
+
+</p>
+   </div>
+
+
+      
+      </details>
+
+
+      <details>
+<summary>Write a program to accept  float number and display its integer part using type casting operator</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language7')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language8')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language9')">PYTHON</button>
+   </div>
+
+   <div id="language7" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+int a;<br>
+float b;<br>
+printf("Enter any float number\n");<br>
+scanf("%f",&b);<br>
+a=(int)b;<br>
+printf("type casting of %f is %d",b,a);<br>
+getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language8" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>public class floatToInteger{<br>
+        public static void main(String args[]) {<br>
+
+       //converting a float to int by casting <br>
+        System.out.println("converting float to int using downcasting");<br>
+        int value =(int) 3.14f; // 3<br>
+        int score =(int) 3.99f; // 3<br>
+
+        System.out.printf("float : %f, int : %d %n", 3.14f, value); <br>
+        System.out.printf("float : %f, int : %d %n", 3.99f, score);<br>
+        }<br>
+        }<br>
+
+
+
+</p> 
+   </div>
+
+   <div id="language9" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># conversion from float to int<br>
+
+# printing data type of 'num'<br>
+print('type:',<br>
+type(num).__name__)<br>
+# conversion to int<br>
+num = int(num)<br>
+
+# printing data type of 'num'<br>
+print('converted value:', num,<br>
+', type:', type(num).__name__)<br>
+
+</p>
+   </div>
+      </details>
+
+
+      <details>
+<summary>Write a program to find largest of three number using if-else statement       </summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language10')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language11')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language12')">PYTHON</button>
+   </div>
+
+   <div id="language10" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int a,b,c;<br>
+  clrscr();<br>
+  printf("Enter 3 numbers:\n");<br>
+  scanf("%d%d%d",&a,&b,&c);<br>
+  if(a>b)<br>
+  {<br>
+      if(a>c)<br>
+          printf("%d is largest number",a);<br>
+      else<br>
+          printf("%d is Largest number",c);<br>
+  }<br>
+  else<br>
+  {<br>
+      if(b>c)<br>
+          printf("%d is Largest number",b);<br>
+      else<br>
+          printf("%d is Largest number",c);<br>
+  }<br>
+  getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language11" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>public class LargestNumberExample4 <br> 
+       {  <br>
+       public static void main(String[] args)<br>   
+      {  <br>
+     //initializing numbers to compare  <br>
+     int x = 1010, y = 170, z = 169;  <br>
+     if(x >= y)   <br>
+     {  <br>
+     if(x >= z)  <br>
+     //prints x, if the above two conditions are true<br>  
+     System.out.println("The largest number is: "+x);  <br>
+     else  <br>
+     //prints z, if the condition defined in inner if is true and the condition defined in inner if is false  <br>
+     //means x > y and x < z  <br>
+     System.out.println("The largest number is: "+z); <br> 
+     }   <br>
+     else   <br>
+      {  <br>
+     if(y >= z) <br> 
+     //prints y, if the condition defined in outer if is false and the condition defined in inner if is true  <br>
+     //means z>x and y>z  <br>
+     System.out.println("The largest number is: "+y);  <br>
+     else  <br>
+     //prints z, if the condition defined in both inner and outer loop is false<br>  
+     //z>x and z>y  <br>
+     System.out.println("The largest number is: "+z);  <br> 
+     }    <br>
+     }  <br>
+     }  <br>
+</p> 
+   </div>
+
+   <div id="language12" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python program to find the greatest of three numbers using if-else statement<br><br>
+num1 = int(input())<br>
+num2 = int(input())<br>
+num3 = int(input())<br>
+if (num1 >= num2) and (num1 >= num3):<br>
+largest = num1<br>
+elif (num2 >= num1) and (num2 >= num3):<br>
+  greatest = num2<br>
+  else:<br>
+   greatest = num3<br>
+   print("The greatest number is",greatest )<br>
+
+</p>
+   </div>
+      </details>
+
+
+      <details>
+<summary>Write a menu driven program to perform ADD/SUBTRACT/MULTIPLY/DIVIDE/MODULUS based on the users choice using switch case statement</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language13')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language14')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language15')">PYTHON</button>
+   </div>
+
+   <div id="language13" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+int a,b;<br>
+int op;<br>
+//clrscr();<br>
+printf(" 1.Addition\n 2.Subtraction\n 3. Multiplication\n 4.Modulus\n");<br>
+printf("Enter the values of a & b: ");<br>
+scanf("%d %d",&a,&b);<br>
+printf("Enter your Choice: ");<br>
+scanf("%d",&op);<br>
+switch(op)<br>
+{<br>
+case 1:<br>
+printf("Sum of %d and %d is : %d",a,b,a+b);<br>
+break;<br>
+case 2:<br>
+printf("Difference of %d and %d is : %d",a,b,a-b);<br>
+break;<br>
+case 3 :<br>
+printf("Multiplication of %d and %d is : %d", a,b,a*b);<br>
+break;<br>
+case 4:<br>
+printf("Modulus of Two Numbers is : %d ",a%b);<br>
+break;<br>
+default:<br>
+printf(" Enter Your Correct Choice.");<br>
+break;<br>
+}<br>
+getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language14" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>import java.util.Scanner;
+
+class Main {<br>
+  public static void main(String[] args) {<br>
+
+    char operator;<br>
+    Double number1, number2, result;<br>
+
+    // create an object of Scanner class<br>
+    Scanner input = new Scanner(System.in);<br>
+
+    // ask users to enter operator<br>
+    System.out.println("Choose an operator: +, -, *, or /");<br>
+    operator = input.next().charAt(0);<br>
+
+    // ask users to enter numbers<br>
+    System.out.println("Enter first number");<br>
+    number1 = input.nextDouble();<br>
+
+    System.out.println("Enter second number");<br>
+    number2 = input.nextDouble();<br>
+
+    switch (operator) {<br>
+
+      // performs addition between numbers<br>
+      case '+':<br>
+        result = number1 + number2;<br>
+        System.out.println(number1 + " + " + number2 + " = " + result);<br>
+        break;<br>
+
+      // performs subtraction between numbers<br>
+      case '-':<br>
+        result = number1 - number2;<br>
+        System.out.println(number1 + " - " + number2 + " = " + result);<br>
+        break;<br>
+
+      // performs multiplication between numbers<br>
+      case '*':<br>
+        result = number1 * number2;<br>
+        System.out.println(number1 + " * " + number2 + " = " + result);<br>
+        break;<br>
+
+      // performs division between numbers<br>
+      case '/':<br>
+        result = number1 / number2;<br>
+        System.out.println(number1 + " / " + number2 + " = " + result);<br>
+        break;
+<br>
+      default:<br>
+        System.out.println("Invalid operator!");<br>
+        break;<br>
+    }<br>
+
+    input.close();<br>
+  }<br>
+}<br>
+</p> 
+   </div>
+
+   <div id="language15" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python program to perform Addition Subtraction Multiplication<br>
+# and Division of two numbers<br>
+
+num1 = int(input("Enter First Number: "))<br>
+num2 = int(input("Enter Second Number: "))
+<br>
+print("Enter which operation would you like to perform?")<br>
+ch = input("Enter any of these char for specific operation +,-,*,/: ")<br>
+
+result = 0<br>
+if ch == '+':<br>
+    result = num1 + num2<br>
+    elif ch == '-':<br>
+        result = num1 - num2<br>
+        elif ch == '*':<br>
+            result = num1 * num2<br>
+            elif ch == '/':<br>
+                result = num1 / num2<br>
+                else:<br>
+                    print("Input character is not recognized!")<br>
+print(num1, ch , num2, ":", result)<br>
+
+
+</p>
+   </div>
+      </details>
+
+      <details>
+<summary>Write a program to calculate the value of following series <br>  1+(1/2!)+(1/3!)+........(1/n!)</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language16')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language17')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language18')">PYTHON</button>
+   </div>
+
+   <div id="language16" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int i,n,fact;<br>
+  fact=1;<br>
+  float sum;<br>
+  sum=0.0;<br>
+  printf("Enter value of n\n");<br>
+  scanf("%d",&n);<br>
+  for(i=1;i<=n;i++)<br>
+  {<br>
+    fact=fact*i;<br>
+    sum=sum+(1.0/fact);<br>
+  }<br>
+  printf("Sum of given series is=%f",sum);<br>
+  getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language17" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>// A simple Java program to compute<br>
+// sum of series 1/1! + 1/2! + .. + 1/n!<br>
+import java.io.*;<br>
+
+class GFG {<br>
+  
+  // Utility function to find<br>
+  static int factorial(int n)<br>
+  {<br>
+    int res = 1;<br>
+    for (int i = 2; i <= n; i++)<br>
+    res *= i;<br>
+    return res;<br>
+  }<br>
+  
+  // A Simple Function to return value<br>
+  // of 1/1! + 1/2! + .. + 1/n!<br>
+  static double sum(int n)<br>
+  {<br>
+    double sum = 0;<br>
+    for (int i = 1; i <= n; i++)<br>
+      sum += 1.0/factorial(i);<br>
+    return sum;<br>
+  }<br>
+
+  // Driver program<br>
+  public static void main (String[] args)<br>
+  {<br>
+    int n = 5;<br>
+    System.out.println(sum(n));<br>
+  }<br>
+}<br>
+
+</p> 
+   </div>
+
+   <div id="language18" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python3 program to compute sum of series<br>
+# 1/1! + 1/2! + .. + 1/n!<br>
+
+# Function to find factorail of a number<br>
+def factorial(n):<br>
+res = 1<br>
+for i in range(2, n + 1):<br>
+res *= i<br>
+return res<br>
+# A Simple Function to return value<br>
+# of 1/1! + 1/2! + .. + 1/n!<br>
+def sum(n):<br>
+s = 0.0<br>
+for i in range(1, n + 1):<br>
+s += 1.0 / factorial(i)<br>
+print(s)<br>
+# Driver program to test above functions<br>
+n = 5<br>
+sum(n)<br>
+</p><
+   </div>
+      </details>
+
+      <details>
+<summary>Write a program to display following star pattern using nested loop<br>
+*<br>**<br>***<br>****<br>*****<br></summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language19')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language20')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language21')">PYTHON</button>
+   </div>
+
+   <div id="language19" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int i,j;<br>
+  for(i=0;i<5;i++)<br>
+  {<br>
+    for(j=0;j<=i;j++)<br>
+    printf(" *");<br>
+    printf("\n");<br>
+  }<br>
+  getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language20" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>// A simple Java program to compute sum of series 1/1! + 1/2! + .. + 1/n!<br>
+import java.io.*;<br>
+
+class GFG {<br>
+  
+  // Utility function to find<br>
+  static int factorial(int n)<br>
+  {<br>
+    int res = 1;<br>
+    for (int i = 2; i <= n; i++)<br>
+    res *= i;<br>
+    return res;<br>
+  }<br>
+  
+  // A Simple Function to return value of 1/1! + 1/2! + .. + 1/n!  <br>
+  static double sum(int n)<br>
+  {<br>
+    double sum = 0;<br>
+    for (int i = 1; i <= n; i++)<br>
+      sum += 1.0/factorial(i);<br>
+    return sum;<br>
+  }<br>
+
+  // Driver program<br>
+  public static void main (String[] args)<br>
+  {<br>
+    int n = 5;<br>
+    System.out.println(sum(n));<br>
+  }<br>
+}<br>
+
+</p> 
+   </div>
+
+   <div id="language21" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python 3.x code to demonstrate star pattern<br>
+
+# Function to demonstrate printing pattern<br>
+def pypart(n):<br>
+myList = []<br>
+for i in range(1,n+1):<br>
+myList.append("*"*i)<br>
+print("\n".join(myList))<br>
+# Driver Code<br>
+n = 5<br>
+pypart(n)
+<br>
+Far star:<br>
+
+# Python 3.x code to demonstrate star pattern<br>
+
+# Function to demonstrate printing pattern<br>
+def pypart(n):<br>
+# outer loop to handle number of rows<br>
+# n in this case<br>
+for i in range(0, n):<br>
+# inner loop to handle number of columns<br>
+# values changing acc. to outer loop<br>
+for j in range(0, i+1):<br>
+# printing stars<br>
+print("* ",end="")<br>
+# ending line after each row<br>
+print("\r")<br>
+# Driver Code<br>
+n = 5<br>
+pypart(n)<br>
+</p>
+   </div>
+      </details>
+   
+
+      <details>
+<summary>Write a program to check whether a given number is prime or not</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language22')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language23')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language24')">PYTHON</button>
+   </div>
+
+   <div id="language22" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int i,n;<br>
+  i=2;<br>
+  printf("Enter number to be checked for prime: ");<br>
+  scanf("%d",&n);<br>
+  while(n%i!=0)<br>
+  {<br>
+    i++;<br>
+  }<br>
+  if(n==i)<br>
+    printf("%d is prime number",n);<br>
+  else<br>
+    printf("%d is not prime number",n);<br>
+  getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language23" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>public class PrimeExample{    <br>
+ public static void main(String args[]){  <br>  
+  int i,m=0,flag=0;      <br>
+  int n=3;//it is the number to be checked<br>    
+  m=n/2;      <br>
+  if(n==0||n==1){ <br> 
+   System.out.println(n+" is not prime number"); <br>     
+  }else{  <br>
+   for(i=2;i<=m;i++){  <br>    
+    if(n%i==0){      <br>
+     System.out.println(n+" is not prime number");<br>      
+     flag=1;      <br>
+     break;      <br>
+    }      <br>
+   }      <br>
+   if(flag==0)  { System.out.println(n+" is prime number"); }<br>  
+  }//end of else  <br>
+}    <br>
+}<br>
+
+</p> 
+   </div>
+
+   <div id="language24" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>number = number = input('Please enter a number:')<br>
+
+i = 2<br>
+toggle = 0<br>
+
+while i< number:<br>
+if number%i == 0:<br>
+toggle = 1<br>
+print ("Your number is NOT a prime number!");<br>
+i = i + 1<br>
+if toggle == 0:<br>
+print ("Your number is a prime number!");<br>
+
+</p>
+   </div>
+      </details>
+   
+
+      <details>
+<summary>Write a program to find sum and product of all the digits of a user entered number using do-while loop</summary>
+     <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language25')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language26')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language27')">PYTHON</button>
+   </div>
+
+   <div id="language25" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int n,number,digit,sum,product;<br>
+  sum=0;<br>
+  product=1;<br>
+  printf("Enter number to find sum and product of all the digits of that number: ");<br>
+  scanf("%d",&n);<br>
+  number=n;<br>
+  do<br>
+  {<br>
+      digit=n%10;<br>
+      sum=sum+digit;<br>
+      product=product*digit;<br>
+      n=n/10;<br>
+  }while(n!=0);<br>
+  printf("Sum of all the digits of %d is: %d \n",number,sum);<br>
+  printf("Product of all the digits of %d is: %d ",number,product);<br>
+  getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language26" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>import java.util.Scanner;<br>
+public class Use_Do_While<br>
+{<br>
+    public static void main(String[] args)<br>
+    {<br>
+        int n, a, m = 0, sum = 0;<br>
+        Scanner s = new Scanner(System.in);<br>
+        System.out.print("Enter any number:");<br>
+        n = s.nextInt();<br>
+        do<br>
+        {<br>
+            a = n % 10;<br>
+            m = m * 10 + a;<br>
+            sum = sum + a;<br>
+            n = n / 10;<br>
+        }<br>
+        while( n > 0);<br>
+        System.out.println("Reverse:"+m);<br>
+        System.out.println("Sum of digits:"+sum);<br>
+    }<br>
+}<br>
+</p> 
+   </div>
+
+   <div id="language27" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python program to sum all the digits of an input number<br>
+
+num = int(input("Enter a Number: "))<br>
+result = 0<br>
+hold = num<br>
+
+# while loop to iterate through all the digits of input number<br>
+while num > 0:<br>
+    rem = num % 10<br>
+        result = result + rem<br>
+            num = int(num/10)<br>
+# displaying output<br>
+print("Sum of all digits of", hold, "is: ", result)<br>
+
+
+</p>
+   </div>
+      </details>
+   
+
+      <details>
+<summary>Write a program to find the power of a given number using function</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language28')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language29')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language30')">PYTHON</button>
+   </div>
+
+   <div id="language28" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int x,n,result;<br>
+  int power(int x,int n);<br>
+  printf("Enter number and power of that number to be find: ");<br>
+  scanf("%d%d",&x,&n);<br>
+  result=power(x,n);<br>
+  printf("%dth power of %d is=%d",n,x,result);<br>
+  getch();<br>
+}<br>
+int power(int x,int n)<br>
+{<br>
+  int i,prod;<br>
+  prod=1;<br>
+  for(i=1;i<=n;i++)<br>
+  {<br>
+    prod=prod*x;<br>
+  }<br>
+  return prod;<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language29" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>import java.util.Scanner;<br>
+public class PowerOfNumber {<br>
+   public static void main(String args[]){<br>
+      Scanner sc = new Scanner(System.in);<br>
+      System.out.println("Enter the base number ::");<br>
+      int base = sc.nextInt();<br>
+      int temp = base;<br>
+      System.out.println("Enter the exponent number ::");<br>
+      int exp = sc.nextInt();<br>
+
+      for (int i=1; i< exp; i++){<br>
+         temp = temp*temp;<br>
+      }<br>
+      System.out.println("Result of "+base+" power "+exp+" is "+temp);<br>
+   }<br>
+}<br>
+</p> 
+   </div>
+
+   <div id="language30" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>def power(N, P):<br>
+
+# if power is 0 or 1 then number is returned<br>
+if(P == 0 or P == 1):<br>
+return N<br>
+else:<br>
+return (N*power(N, P-1))<br>
+# Driver program<br>
+N = 5<br>
+P = 2<br>
+
+print(power(N, P))<br>
+
+
+
+Using for loop.<br>
+# Python Program to find Power of a Number<br>
+
+number = int(input(" Please Enter any Positive Integer : "))<br>
+exponent = int(input(" Please Enter Exponent Value : "))<br>
+power = 1
+<br>
+for i in range(1, exponent + 1):<br>
+    power = power * number<br>
+print("The Result of {0} Power {1} = {2}".format(number, exponent, power))<br>
+
+Using while loop.<br>
+
+# Python Program to find Power of a Number<br>
+
+number = int(input(" Please Enter any Positive Integer : "))<br>
+exponent = int(input(" Please Enter Exponent Value : "))<br>
+
+power = 1<br>
+i = 1
+<br>
+while(i <= exponent):<br>
+    power = power * number<br>
+        i = i + 1
+print("The Result of {0} Power {1} = {2}".format(number, exponent, power))<br>
+
+</p>
+   </div>
+      </details>
+      <details>
+<summary>Write a program to swap two numbers using call by value</summary>
+     <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language31')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language32')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language33')">PYTHON</button>
+   </div>
+
+   <div id="language31" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int a,b;<br>
+  void swap(int a,int b);<br>
+  printf("Enter two numbers to be swapped:\n ");<br>
+  scanf("%d%d",&a,&b);<br>
+  printf("Values of a=%d and b= %d before swapping \n",a,b);<br>
+  swap(a,b);<br>
+  printf("Values of a=%d and b= %d after swapping in main function \n",a,b);<br>
+  getch();<br>
+}<br>
+void swap(int a,int b)<br>
+{<br>
+  int temp;<br>
+  temp=a;<br>
+  a=b;<br>
+  b=temp;<br>
+  printf("Values of a=%d and b=%d in swap function \n",a,b);<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language32" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>import java.util.*;  <br>
+class Swap_With {  <br>
+    public static void main(String[] args) { <br> 
+       int x, y, t;// x and y are to swap   <br>
+       Scanner sc = new Scanner(System.in);  <br>
+       System.out.println("Enter the value of X and Y");<br>  
+       x = sc.nextInt();  <br>
+       y = sc.nextInt();  <br>
+       System.out.println("before swapping numbers: "+x +"  "+ y);  <br>
+       /*swapping */  <br>
+       t = x;  <br>
+       x = y;  <br>
+       y = t;  <br>
+       System.out.println("After swapping: "+x +"   " + y);<br>  
+       System.out.println( );  <br>
+    }    <br>
+}  <br>
+</p> 
+   </div>
+
+   <div id="language33" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python swap program  <br>
+x = input('Enter value of x: ') <br>
+y = input('Enter value of y: ') <br>
+# create a temporary variable and swap the values <br>
+temp = x <br>
+x = y <br>
+y = temp <br>
+print('The value of x after swapping: {}'.format(x)) <br>
+print('The value of y after swapping: {}'.format(y)) <br>
+
+</p>
+   </div>
+      </details>
+   
+
+      <details>
+<summary>Write a program to find Fibonacci series using recursive function</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language34')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language35')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language36')">PYTHON</button>
+   </div>
+
+   <div id="language34" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include < stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+    int n,i;<br>
+    int fibo(int num);<br>
+    printf("Enter the nth number in fibonacci series: ");<br>
+    scanf("%d",&n);<br>
+    printf("Fibonacci series is : ");<br>
+    for(i=0;i<=n-1;i++)<br>
+    { <br>
+        printf("%d ",fibo(i));<br>
+    }<br>
+    getch();<br>
+    
+}<br>
+int fibo(int num)<br>
+{<br>
+    if (num == 0)<br>
+    {<br>
+        return 0;<br>
+    }<br>
+    else if (num == 1)<br>
+    {<br>
+        return 1;<br>
+        else<br>
+    {<br>
+        return(fibo(num - 1) + fibo(num - 2));<br>
+    }<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language35" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>class FibonacciExample2{ <br>
+static int n1=0,n2=1,n3=0;<br>
+static void printFibonacci(int count){<br>
+if(count>0){<br>
+n3 = n1 + n2;<br>
+n1 = n2;<br>
+n2 = n3;<br>
+System.out.print(" "+n3);<br>
+printFibonacci(count-1);<br>
+}<br>
+}<br>
+public static void main(String args[]){<br>
+
+int count=10;<br>
+System.out.print(n1+" "+n2);//printing 0 and 1<br>
+printFibonacci(count-2);//n-2 because 2 numbers are already printed<br>
+}<br>
+}</p> 
+   </div>
+
+   <div id="language36" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>def recur_fibo(n): <br>
+   if n <= 1: <br>
+          return n <br>
+             else: <br>
+                    return(recur_fibo(n-1) + recur_fibo(n-2)) <br>
+                    # take input from the user <br>
+                    nterms = int(input("How many terms? ")) <br>
+                    # check if the number of terms is valid <br>
+                    if nterms <= 0: <br>
+                       print("Plese enter a positive integer") <br>
+                       else: <br>
+                          print("Fibonacci sequence:") <br>
+                             for i in range(nterms): <br>
+                                    print(recur_fibo(i)) <br>
+
+
+
+</p>
+   </div>
+      </details>
+   
+
+      <details>
+<summary>Write a program to store numbers in ascending order using array</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language37')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language38')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language39')">PYTHON</button>
+   </div>
+
+   <div id="language37" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+  int n,a[100],i,j,temp;<br>
+  printf("Enter how many elements are there in array :");<br>
+  scanf("%d",&n);<br>
+  printf("Enter values of elements: \n");<br>   
+  for(i=0;i< n;i++)<br>
+    scanf("%d",&a[i]);<br>
+  for(i=0;i< n-1;i++)<br>
+  {<br>
+    for(j=0;j< n-1;j++)<br>
+    {<br>
+      if(a[j]>a[j+1])<br>
+      {<br>
+        temp=a[j];<br>
+        a[j]=a[j+1];<br>
+        a[j+1]=temp;<br>
+      }<br>
+    }<br>
+  }<br>
+  printf("After sorting elements of array in ascending order\n");<br>
+  for(i=0;i< n;i++)<br>
+    printf("%d ",a[i]);<br>
+  getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language38" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>class FibonacciExample2{  <br>
+ static int n1=0,n2=1,n3=0;    <br>
+ static void printFibonacci(int count){<br>    
+    if(count>0){    <br>
+         n3 = n1 + n2;  <br>  
+         n1 = n2;    <br>
+         n2 = n3;    <br>
+         System.out.print(" "+n3);<br>   
+         printFibonacci(count-1);    <br>
+     }    <br>
+ }    <br>
+ public static void main(String args[]){<br>    
+  int count=10;    <br>
+  System.out.print(n1+" "+n2);//printing 0 and 1<br>    
+  printFibonacci(count-2);//n-2 because 2 numbers are already printed<br>   
+ }  <br>
+}  <br>
+</p> 
+   </div>
+
+   <div id="language39" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>#Initialize array    <br>
+arr = [5, 2, 8, 7, 1];    <br>
+temp = 0;   <br>
+#Displaying elements of original array<br>   
+print("Elements of original array: "); <br>  
+for i in range(0, len(arr)):   <br>
+    print(arr[i], end=" ");   <br>
+#Sort the array in ascending order   <br>
+for i in range(0, len(arr)):   <br>
+    for j in range(i+1, len(arr)):   <br>
+            if(arr[i] > arr[j]):   <br>
+                        temp = arr[i];   <br>
+                                    arr[i] = arr[j];  <br> 
+                                                arr[j] = temp;<br>   
+print();   <br>
+#Displaying elements of the array after sorting   <br>
+print("Elements of array sorted in ascending order: ");   <br>
+for i in range(0, len(arr)):   <br>
+    print(arr[i], end=" ");   <br>
+</p>
+   </div>
+      </details>
+   
+
+      <details>
+<summary>Write a program to multiply  two matrices ussing two dimensional array.</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language40')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language41')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language42')">PYTHON</button>
+   </div>
+
+   <div id="language40" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+int i,j,k,m,n,x,y,a[10][10],b[10][10],c[10][10];<br>
+printf("Enter size of first matrix: ");<br>
+scanf("%d%d",&m,&n);<br>
+printf("Enter size of second matrix: ");<br>
+scanf("%d%d",&x,&y);<br>
+if(n!=x)<br>
+{<br>
+printf("Invalid size");<br>
+goto exit;<br>
+}<br>
+for(i=0;i< m;i++)<br>
+for(j=0;j< y;j++)<br>
+c[i][j]=0;<br>
+printf("Enter elements of first matrix: \n");<br>
+for(i=0;i< m;i++)<br>
+for(j=0;j< n;i++)<br>
+scanf("%d",&a[i][j]);<br>
+printf("Enter elements of second matrix: \n");<br>
+for(i=0;i< x;i++)<br>
+for(j=0;j< y;i++)<br>
+scanf("%d",&b[i][j]);<br>
+for(i=0;i< m;i++)<br>
+{<br>
+for(j=0;j< y;i++)<br>
+{<br>
+for(k=0;k< n;k++)<br>
+{<br>
+c[i][j]=c[i][j]+a[i][k]*b[k][j];<br>
+}<br>
+}<br>
+}<br>
+printf("Multiplication of matrix a and b is as follows\n");<br>
+for(i=0;i< m;i++)<br>
+{<br>
+for(j=0;j< y;j++)<br><br>
+printf("%d ",c[i][j]);<br>
+printf("\n");<br>
+}<br>
+exit:<br>
+getch();<br>
+</p>
+   </div>
+
+   <div id="language41" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>public class MatrixMultiplicationExample{  <br>
+public static void main(String args[]){  <br>
+//creating two matrices    <br>
+int a[][]={{1,1,1},{2,2,2},{3,3,3}}; <br>   
+int b[][]={{1,1,1},{2,2,2},{3,3,3}};    <br>
+    
+//creating another matrix to store the multiplication of two matrices<br>    
+int c[][]=new int[3][3];  //3 rows and 3 columns  <br>
+    
+//multiplying and printing multiplication of 2 matrices<br>    
+for(int i=0;i<3;i++){    <br>
+for(int j=0;j<3;j++){    <br>
+c[i][j]=0;      <br>
+for(int k=0;k<3;k++)<br>      
+{      <br>
+c[i][j]+=a[i][k]*b[k][j]; <br>     
+}//end of k loop  <br>
+System.out.print(c[i][j]+" ");  //printing matrix element <br> 
+}//end of j loop  <br>
+System.out.println();//new line<br>    
+}    <br>
+}}<br>
+</p> 
+   </div>
+
+   <div id="language42" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Program to multiply two matrices using nested loops<br>
+
+# 3x3 matrix<br>
+X = [[12,7,3],<br>
+    [4 ,5,6],<br>
+        [7 ,8,9]]<br>
+        # 3x4 matrix<br>
+        Y = [[5,8,1,2],<br>
+            [6,7,3,0],<br>
+                [4,5,9,1]]<br>
+                # result is 3x4<br>
+                result = [[0,0,0,0],<br>
+                         [0,0,0,0],<br>
+                                  [0,0,0,0]]<br>
+# iterate through rows of X<br>
+for i in range(len(X)):<br>
+   # iterate through columns of Y<br>
+      for j in range(len(Y[0])):<br>
+             # iterate through rows of Y<br>
+                    for k in range(len(Y)):<br>
+                               result[i][j] += X[i][k] * Y[k][j]<br>
+for r in result:<br>
+   print(r)<br>
+
+
+
+Using nested comprehension.<br>
+
+# Program to multiply two matrices using list comprehension<br>
+
+# 3x3 matrix<br>
+X = [[12,7,3],<br>
+    [4 ,5,6],<br>
+        [7 ,8,9]]<br>
+# 3x4 matrix<br>
+Y = [[5,8,1,2],<br>
+    [6,7,3,0],<br>
+        [4,5,9,1]]<br>
+# result is 3x4<br>
+result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*Y)] for X_row in X]<br>
+
+for r in result:<br>
+   print(r)<br>
+
+</p>
+   </div>
+      </details>
+
+      <details>
+<summary>Write a program to perform all string operations using functions in header file string.h </summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language43')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language44')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language45')">PYTHON</button>
+   </div>
+
+   <div id="language43" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+#include< string.h><br>
+void main()<br>
+{<br>
+char s1[20],s2[20],s3[20];<br>
+printf("Enter two strings: \n");<br>
+gets(s1);<br>
+gets(s2);<br>
+printf("Length of string %s=%d and %s=%d\n",s1,strlen(s1),s2,strlen($2));<br>
+strcpy(s3,s1);<br>
+printf("Copied string s1 in s3 is: \n");<br>
+puts(s3);<br>
+strcat(s1,s2):<br>
+printf("Concatenated string s1 and s2 is: \n");<br>
+puts(s1);<br>
+if(strcmp(s1,s2)==0)<br>
+printf("String s1=%s and s2=%s are equal \n",s1,52);<br>
+else<br>
+printf("String s1=%s and s2=%s are not equal \n",s1,s2);<br>
+puts(strlwx(s1));<br>
+puts(strupt(s1));<br>
+getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language44" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>//Java String length()<br>
+public class Example{<br>
+public static void main(String args[]{ <br>
+String s1="hello"; <br>
+String s2="whatsup"; <br>
+System.out.println("string length is: "+s1.length());<br>  
+System.out.println("string length is: "+s2.length()); <br>
+}}<br>
+
+//Java String compareTo()<br>
+public class CompareToExample{ <br>
+public static void main(String args[]){ <br>
+String s1="hello";<br>
+String s2="hello"; <br>
+String s3="hemlo"; <br>
+String s4="flag";<br>
+System.out.println(s1.compareTo(s2)); // 0 because both are equal<br>
+System.out.println(s1.compareTo(s3)); //-1 because "l" is only one time lower than "m" <br>
+System.out.println(s1.compareTo(s4)); // 2 because "h" is 2 times greater than "f"<br>
+}} <br>
+
+//Java String concat()<br>
+public class ConcatExample{<br>
+public static void main(String args[]){<br>
+String s1="hello";<br>
+s1=s1.concat("how are you");<br>
+System.out.println(s1);<br>
+}}<br>
+
+//Java String IsEmpty()<br>
+public class IsEmptyExample{ <br>
+public static void main(String args[]){ <br>
+String s1=""; <br>
+String s2="hello"; <br>
+System.out.println(s1.isEmpty());      // true<br>
+System.out.println(s2.isEmpty());      // false<br>
+}}<br>
+
+
+//Java String Trim()<br>
+public class StringTrimExample{  <br>
+public static void main(String args[]){  <br>
+String s1="  hello   ";  <br>
+System.out.println(s1+"how are you");        // without trim()  <br>
+System.out.println(s1.trim()+"how are you"); // with trim()  <br>
+}}  
+
+<br>
+//Java String toLowerCase()<br>
+public class StringLowerExample{<br>
+public static void main(String args[]){<br>
+String s1="HELLO HOW Are You?”;<br>
+String s1lower=s1.toLowerCase();<br>
+System.out.println(s1lower);}<br>
+}
+<br>
+//Java String toUpper()<br>
+public class StringUpperExample{  <br>
+public static void main(String args[]){  <br>
+String s1="hello how are you";  <br>
+String s1upper=s1.toUpperCase();  <br>
+System.out.println(s1upper);  <br>
+}}<br>
+
+//Java String ValueOf()<br>
+public class StringValueOfExample{<br>
+public static void main(String args[]){<br>
+int value=20; <br>
+String s1=String.valueOf(value);<br> 
+System.out.println(s1+17);       //concatenating string with 10 <br>
+}}
+<br>
+//Java String replace()<br>
+public class ReplaceExample1{<br>
+public static void main(String args[]){ <br>
+String s1="hello how are you"; <br>
+String replaceString=s1.replace('h','t'); <br>
+System.out.println(replaceString); }}<br>
+
+
+//Java String replace(CharSequence target, CharSequence replacement) method <br>
+public class ReplaceExample2{ <br>
+public static void main(String args[]){ <br>
+String s1="Hey, welcome to Edureka"; <br>
+String replaceString=s1.replace("Edureka","Brainforce"); <br>
+System.out.println(replaceString); <br>
+}}
+<br>
+//Java String contains()<br>
+class ContainsExample{ <br>
+public static void main(String args[]){ <br>
+String name=" hello how are you doing"; <br>
+System.out.println(name.contains("how are you"));  // returns true<br>
+System.out.println(name.contains("hello"));        // returns true  <br>
+System.out.println(name.contains("fine"));         // returns false  <br>
+}}<br>
+</p> 
+   </div>
+
+   <div id="language45" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p> # String formatters in Python<br>
+# String formatting using f-strings<br>
+print("<-------------Example 1-------------------->")<br>
+print("Enter your name")<br>
+name = input()<br>
+print(f"Hey !! {name}, welcome to the party...")<br>
+print('\n')<br>
+print("<-------------Example 2-------------------->")<br>
+print("Enter first number")<br>
+a = int(input())<br>
+print("Enter second numberb = int(input())<br>
+print(f"sum of {a} and {b} is {a+b}")<br>
+print('\n')<br>
+# String formatting using format() method<br>
+print("<--------Default order------------>")<br>
+str1 = "{} {} {}".format("Travelling", 'is', 'life')<br>
+print("String will be printed in default order:")<br>
+print(str1)<br>
+print("<--------Positional formatting------------>")<br>
+str2 = "{1} {2} {0}".format("love", "Travelling", "is")<br>
+print(str2)<br>
+print("<--------Keyword formatting------------>")<br>
+str3 = "{T} {i} {l}".format(T='Travelling', l='love', i= 'is')<br>
+print(str3)<br>
+print('\n')<br>
+# String formatting using % operator<br>
+print("Enter number of items")<br>
+item = int(input())<br>
+print("%s is carrying %d items"%(name, item))</p>
+   </div>
+      </details>
+
+      <details>
+<summary>Write a program to check whether a given string is palinndrome or not.</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language46')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language47')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language48')">PYTHON</button>
+   </div>
+
+   <div id="language46" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include < stdio.h><br>
+#include < string.h><br>
+void main()<br>
+{<br>
+    char string[25], reverse_string[25];<br>
+    int i, length=0, flag=0;<br>
+    printf("Enter a string \n");<br>
+    gets(string);<br>
+    for(i=0; string[i]!='\0'; i++)<br>
+    {<br>
+        length++;<br>
+    }<br>
+    printf("The length of the string '%s' = %d\n", string, length);<br>
+    for(i=length-1; i>=0;i--)<br>
+    {<br>
+        reverse_string[length-i-1]=string[i];<br>
+    }<br>
+    for(flag=1, i=0; i< length ; i++)<br>
+    {<br>
+        if(reverse_string[i]!=string[i])<br>
+            flag=0;<br>
+    }<br>
+    if(flag==1)<br>
+       printf("%s is a palindrome. \n", string);<br>
+    else<br>
+       printf("%s is not a palindrome. \n", string);<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language47" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>public class Palindrome<br>
+{<br>
+    public static void main(String args[])
+    {<br>
+        String a, b = "";<br>
+        Scanner s = new Scanner(System.in);<br>
+        System.out.print("Enter the string you want to check:");<br>
+        a = s.nextLine();<br>
+        int n = a.length();<br>
+        for(int i = n - 1; i >= 0; i--)<br>
+        {<br>
+            b = b + a.charAt(i);<br>
+        }<br>
+        if(a.equalsIgnoreCase(b))<br>
+        {<br>
+            System.out.println("The string is palindrome.");<br>
+        }<br>
+        else<br>
+        {<br>
+            System.out.println("The string is not palindrome.");<br>
+        }<br>
+    }<br>
+}<br>
+</p> 
+   </div>
+
+   <div id="language48" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># function which return reverse of a string<br>
+
+def isPalindrome(s):<br>
+return s == s[::-1]<br>
+
+# Driver code<br>
+s = "malayalam"<br>
+ans = isPalindrome(s)<br>
+
+if ans:<br>
+print("Yes")<br>
+else:<br>
+print("No")<br>
+</p>
+   </div>
+      </details>
+      <details>
+<summary>Write a program to store and dispaly roll numer, name, and marks in 3 subjects of n students using structure and display in tabular form.  </summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language49')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language50')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language51')">PYTHON</button>
+   </div>
+
+   <div id="language49" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+struct student<br>
+{<br>
+  char name[20];<br>
+  int roll_no;<br>
+  int cp,chem,maths;<br>
+};<br>
+void main()<br>
+{<br>
+   struct student st[50];<br>
+   int n,i,j;<br>
+   printf("Enter number of students: ");<br>
+   scanf("%d",&n);<br>
+   for(i=0;i< n;i++)<br>
+   {<br>
+     printf("Enter name, roll number, marks of cp chem and maths for student %d \n",i+1);<br>
+     scanf("%s%d%d%d%d",&st[i].name,&st[i].roll_no,&st[i].cp,&st[i].chem,&st[i].maths);<br>
+   }<br>
+   printf("Name\t\t\tRoll_NO\tCP\tChemistry\tMaths\n");<br>
+   for(i=0;i< n;i++)<br>
+      printf("%s\t\t%d\t%d\t%d\t\t%d\n",st[i].name,st[i].roll_no,st[i].cp,st[i].chem,st[i].maths);<br>
+   getch();<br>
+}<br>
+
+</p>
+   </div>
+
+   <div id="language50" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>import java.util.Scanner;
+<br>
+class Student {<br>
+  String name;<br>
+  String stu_id;<br>
+  int score;<br>
+  public Student() {<br>
+    this(" ", " ", 0);<br>
+  }<br>
+  public Student(String initName, String initId, int initScore) {<br>
+    name = initName;<br>
+    stu_id = initId;<br>
+    score = initScore;<br>
+  }<br>
+}<br>
+
+public class Main {<br>
+  public static void main(String[] args) {<br>
+    Scanner in = new Scanner(System.in);<br>
+    System.out.println("Input number of students:");<br>
+    int n = Integer.parseInt(in.nextLine().trim());<br>
+    System.out.println("Input Student Name, ID, Score:");<br>
+    Student stu = new Student();<br>
+    Student max = new Student();<br>
+    Student min = new Student(" ", " ", 100);<br>
+    for (int i = 0; i < n; i ++) {<br>
+      stu.name = in.next();<br>
+      stu.stu_id = in.next();<br>
+      stu.score = in.nextInt();<br>
+      if (max.score < stu.score) {<br>
+        max.name = stu.name;<br>
+        max.stu_id = stu.stu_id;<br>
+        max.score = stu.score;<br>
+      }<br>
+      if (min.score > stu.score) {<br>
+        min.name = stu.name;<br>
+        min.stu_id = stu.stu_id;<br>
+        min.score = stu.score;<br>
+      }<br>
+    }<br>
+    System.out.println("name, ID of the highest score and the lowest score:");<br>
+    System.out.println(max.name + " " + max.stu_id);<br>
+    System.out.println(min.name + " " + min.stu_id);<br>
+    in.close();<br>
+  }<br>
+}<br>
+</p> 
+   </div>
+
+   <div id="language51" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># This is simplest Student data management program in python<br>
+# Create class "Student"<br>
+class Student:<br>
+# Constructor<br>
+def __init__(self, name, rollno, m1, m2):<br>
+self.name = name<br>
+self.rollno = rollno<br>
+self.m1 = m1<br>
+self.m2 = m2<br>
+# Function to create and append new student<br>
+def accept(self, Name, Rollno, marks1, marks2 ):<br>
+# use ' int(input()) ' method to take input from user<br>
+ob = Student(Name, Rollno, marks1, marks2 )<br>
+ls.append(ob)<br>
+# Function to display student details<br>
+def display(self, ob):<br>
+print("Name : ", ob.name)<br>
+print("RollNo : ", ob.rollno)<br>
+print("Marks1 : ", ob.m1)<br>
+print("Marks2 : ", ob.m2)<br>
+print("\n")<br>
+# Search Function<br>
+def search(self, rn):<br>
+for i in range(ls.__len__()):<br>
+if(ls[i].rollno == rn):<br>
+return i<br>
+# Delete Function<br>
+def delete(self, rn):<br>
+i = obj.search(rn)<br>
+del ls[i]<br>
+# Update Function<br>
+def update(self, rn, No):<br>
+i = obj.search(rn)<br>
+roll = No<br>
+ls[i].rollno = roll;<br>
+# Create a list to add Students<br>
+ls =[]<br>
+# an object of Student class<br>
+obj = Student('', 0, 0, 0)<br><br>
+
+print("\nOperations used, ")<br>
+print("\n1.Accept Student details\n2.Display Student Details\n" /<br>
+/ "3.Search Details of a Student\n4.Delete Details of Student" /<br>
+/ "\n5.Update Student Details\n6.Exit")<br>
+# ch = int(input("Enter choice:"))<br>
+# if(ch == 1):<br>
+obj.accept("A", 1, 100, 100)<br>
+obj.accept("B", 2, 90, 90)<br>
+obj.accept("C", 3, 80, 80)<br>
+# elif(ch == 2):<br>
+print("\n")<br>
+print("\nList of Students\n")<br>
+for i in range(ls.__len__()):<br>
+obj.display(ls[i])<br>
+# elif(ch == 3):<br>
+print("\n Student Found, ")<br>
+s = obj.search(2)<br>
+obj.display(ls[s])<br>
+# elif(ch == 4):<br>
+obj.delete(2)<br>
+print(ls.__len__())<br>
+print("List after deletion")<br>
+for i in range(ls.__len__()):<br>
+obj.display(ls[i])<br>
+# elif(ch == 5):<br>
+obj.update(3, 2)<br>
+print(ls.__len__())<br>
+print("List after updation")<br>
+for i in range(ls.__len__()):<br>
+obj.display(ls[i])<br>
+# else:<br>
+print("Thank You !")<br>
+</p>
+   </div>
+      </details>
+
+      <details>
+<summary>Define nested structure consisting following elements:<br>
+         a.  Employee code<br>
+         b.  Employee name<br>
+         c.  Employee salary<br>
+         d.  Employee date of joining<br>
+        Write a program to read atleast 4 records and display them</summary>
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language52')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language53')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language54')">PYTHON</button>
+   </div>
+
+   <div id="language52" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+struct date<br>
+{<br>
+int day;<br>
+int month;<br>
+int year;<br>
+};<br>
+struct employee<br>
+{<br>
+int code;<br>
+char name[20];<br>
+int salary;<br>
+struct date doj;<br>
+};<br>
+void main()<br>
+{<br>
+int i,n;<br>
+struct employee emp[20];<br>
+printf("Enter number of employes:");<br>
+scanf("%d",&n);<br>
+for(i=0;i< n;i++)<br>
+{<br>
+ printf("Enter Employee code, Name, Salary, joining day, Month, Year of Employee %i:\n",i+1);<br>
+scanf("%i%s%i%i%i%i",&emp[i].code,&emp[i].name,&emp[i].salary,&emp[i].doj.day,&emp[i].doj.month,&emp[i].doj.year);<br>
+}
+<br>
+printf("Details of Employees: \n");<br>
+printf("Code\tName\tSalary\tDate of Joining\n");<br>
+printf("..................................");<br>
+for(i=0;i< n;i++)<br>
+{<br>
+printf("\n%i\t%s\t%i\t%i%i/%i",emp[i].code,emp[i].name,emp[i].salary,emp[i].doj.day,emp[i].doj.month,emp[i].doj.year);<br>
+}<br>
+getch();<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language53" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>package JavaTpoint.JavaObjectToJSON;  <br>
+//Creating Employee class  <br>
+class EmployeeDetails {  <br>
+    //Creating properties of Employee class  <br>
+int emp_id, salary;  <br>
+String name, address, department, email;  <br>
+  
+//Getter and setters for getting and setting properties<br>  
+public int getEmp_id() {  <br>
+    return emp_id;  <br>
+}  <br>
+public void setEmp_id(int emp_id) {  <br>
+    this.emp_id = emp_id;  <br>
+}  <br>
+public int getSalary() {  <br>
+    return salary;  <br>
+}  <br>
+public void setSalary(int salary) {  <br>
+    this.salary = salary;  <br>
+}  <br>
+public String getName() {  <br>
+    return name;  <br>
+}  <br>
+public void setName(String name) { <br> 
+    this.name = name;  <br>
+}  <br>
+public String getAddress() {  <br>
+    return address;  <br>
+}  <br>
+public void setAddress(String address) { <br> 
+    this.address = address;  <br>
+}  <br>
+public String getDepartment() {  <br>
+    return department;  <br>
+}  <br>
+public void setDepartment(String department) {  <br>
+    this.department = department;  <br>
+}  <br>
+public String getEmail() {  <br>
+    return email;  <br>
+}  <br>
+public void setEmail(String email) {<br>  
+    this.email = email;  <br>
+}  <br>
+  
+//Overriding toString() method  <br>
+@Override  <br>
+public String toString() {  <br>
+    return "Employee [emp_id = " + emp_id + ", salary = " + salary + ", name = " + name + ", address = " + <br>address<br>  
+            + ", department = " + department + ", email = " + email + "]";  <br>
+    }  <br>
+      
+}  <br>
+//Creating main class  <br>
+public class Employee{  <br>
+    //main() method start <br> 
+    public static void main(String args[]) { <br> 
+          
+        //Creating object of EmployeeDetails class  <br>
+        EmployeeDetails emp = new EmployeeDetails(); <br> 
+        //Setting values to the properties  <br>
+        emp.setEmp_id(101);  <br>
+        emp.setName("Emma Watson");  <br>
+        emp.setDepartment("IT");  <br>
+        emp.setSalary(15000);  <br>
+        emp.setAddress("New Delhi");<br>  
+        emp.setEmail("Emmawatson123@gmail.com");<br>  
+          
+        //Showing Employee details  <br>
+        System.out.println(emp);  <br>
+          
+        //Getting salary using getter  <br>
+        int sal = emp.getSalary();  <br>
+        int increment = 0;  <br>
+        //Incrementing salary based on condition <br> 
+        if ((sal >=1000) && (sal <=1500)) <br> 
+        {  <br>
+            //incrementing salary 2%  <br>
+            increment += (sal * 2)/100; <br> 
+            sal = sal+increment;  <br>
+              
+            emp.setSalary(sal);  <br>
+            System.out.println("\n Salary is incremented \n");  <br>
+            System.out.println(emp);  <br>
+              
+        }else if ((sal >=1500) && (sal <=20000)){ <br> 
+            //incrementing salary 5%  <br>
+            increment += (sal * 5)/100; <br> 
+            sal = sal+increment;  <br>
+              
+            emp.setSalary(sal);  <br>
+            System.out.println("\n Salary is incremented \n");  <br>
+            System.out.println(emp);  <br>
+        }else {  <br>
+            System.out.println("\n Salary is not incremented \n"); <br> 
+            System.out.println(emp);  <br>
+        }         <br>
+    }  <br>
+}  <br>
+</p> 
+   </div>
+
+   <div id="language54" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p>class Employee<br>
+     {<br>
+             public string name;<br>
+                     public int salary;<br>
+                             public int joiningDate;<br>
+
+        public Employee()<br>
+                {<br>
+        }<br>
+        public Employee(string name, int salary, int joiningDate)<br>
+                {<br>
+                            this.name = name;<br>
+                                                             this.salary = salary;<br>
+                                                    this.joiningDate = joiningDate;<br>
+                                                            }<br>
+
+        public void GetEmployeeData()<br>
+                {<br>
+                            {<br>
+                 Console.WriteLine("Enter the name of employee: ");<br>
+                  name = Convert.ToString(Console.ReadLine());<br>
+                Console.WriteLine("Enter the salary of employee: ");<br>
+                  salary = Convert.ToInt32(Console.ReadLine());<br>
+                Console.WriteLine("Enter the date of joining of employee: ");<br>
+                joiningDate = Convert.ToInt32(Console.ReadLine());<br>
+                                              }<br>
+                                        }<br>
+        public void DisplayEmployee()<br>
+                {
+                Console.WriteLine("The name of employee is: "+ name);<br>
+             Console.WriteLine("The salary of employee is: "+salary);<br>
+         Console.WriteLine("The date of joining of employee is: "+joiningDate);<br>
+                                      }<br>
+                                }<br>
+                                class Program<br>
+                          {<br>
+                          static void Main(string[] args)<br>
+                                     {<br>
+                      Employee[] e = new Employee[10];<br>
+                        for(int i = 0; i < 10; i++)<br>
+                                {<br>
+        Console.WriteLine($"Enter the data of employee with id: {i} *****************************************");<br>
+                       e[i] = new Employee();<br>
+                     e[i].GetEmployeeData();<br>
+                                                 }<br>
+            Console.WriteLine("***********The data of given employees is: ");<br>
+            for(int i = 0; i < 10; i++)<br>
+                        {<br>
+                                        e[i].DisplayEmployee();<br>
+                                                    }<br>
+                                                            }<br>
+                                                                }<br>
+
+
+
+</p>
+   </div>
+      </details>
+
+      <details>
+<summary>Write a program to swap two numbers using call by reference.</summary>
+     <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'language55')">#C</button>
+      <button class="tablinks" onclick="openCity(event, 'language56')">JAVA</button>
+      <button class="tablinks" onclick="openCity(event, 'language57')">PYTHON</button>
+   </div>
+
+   <div id="language55" class="tabcontent">
+     <h3>Progran in #C</h3>
+     <p>#include< stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+int a,b;<br>
+void swap(int *a int *b);<br>
+clrscr();<br>
+printf("Enter two numbers to be swapped: \n");<br>
+scanf("%d%d",&a,&b);<br>
+printf("Values of a=%d and b= %d before swapping \n",a,b);<br>
+swap(&a&b);<br>
+printf("Values of a=%d and b=%d after swapping in main function \n" ,a,b);<br>
+getch();<br>
+}<br>
+void swap(int*a int*b)<br>
+{<br>
+int temp;<br>
+temp=*a;<br>
+*a=*b;<br>
+*b=temp;<br>
+printf("Values of a=%d and b=%d in swap function \n",*a,*b);<br>
+}<br>
+</p>
+   </div>
+
+   <div id="language56" class="tabcontent">
+     <h3>Program in JAVA</h3>
+     <p>import java.util.*;  <br>
+class Swap_With {  <br>
+    public static void main(String[] args) {  <br>
+       int x, y, t;// x and y are to swap   <br>
+       Scanner sc = new Scanner(System.in);  <br>
+       System.out.println("Enter the value of X and Y");<br>  
+       x = sc.nextInt();  <br>
+       y = sc.nextInt();  <br>
+       System.out.println("before swapping numbers: "+x +"  "+ y);  <br>
+       /*swapping */  <br>
+       t = x;  <br>
+       x = y;  <br>
+       y = t;<br>       System.out.println("After swapping: "+x +"   " + y);  <br>
+       System.out.println( );  <br>
+    }    <br>
+}  <br>
+</p> 
+   </div>
+
+   <div id="language57" class="tabcontent">
+     <h3>Program in PYTHON</h3>
+     <p># Python program to demonstrate<br>
+# swapping of two variables
+<br>
+x = 10<br>
+y = 50
+<br>
+# Swapping of two variables<br>
+# Using third variable<br>
+temp = x<br>
+x = y<br>
+y = temp
+<br>
+print("Value of x:", x)<br>
+print("Value of y:", y)<br>
+
+</p>
+   </div>
+      </details>
+ 
+
+
+
+<script>
+      function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+  
+      <div class="fakeimg">
+         <a href="https://old.mu.ac.in/student-section/"><img src="images/mumbai university.jfif">
+        </a>
+      </div>
+      <div class="scrolling" style="height: 240px;">
+      <marquee behavior="scroll" direction="up">
+
+      <p>UPDATE 1<br>
+         UPDATE 2<br>
+         UPDATE 3<br>
+         UPDATE 4<br>
+         UPDATE 5<br>
+         UPDATE 6<br>
+         UPDATE 7<br>
+         UPDATE 8<br></p>
+
+        </marquee> 
+
+      </div>
+
+    </div>
+    <div class="card3">
+      <h2>TAP TO LEARN</h2>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/java/default.asp"target="_blank"><img src="images/java.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/python/default.asp"><img src="images/python.jpg"></a>
+      </div>  
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/cs/default.asp"><img src="images/c.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/sql/default.asp"><img src="images/sql.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/nodejs/default.asp"><img src="images/node.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/git/default.asp"><img src="images/git.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp"><img src="images/raspberry.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/cpp/default.asp"><img src="images/c++.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/php/default.asp"><img src="images/php.jpg"></a>
+      </div>
+      <div class="fakeimg">
+        <a href="https://www.w3schools.com/asp/default.asp"><img src="images/asp.jpg"></a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+  <footer>
+ <p>&copy;COPYRIGHT @ 2021</p>
+  <div id="social_media">
+    <h6>FOLLOW US ON</h6>
+    <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+  </div>
+
+
+
+</footer>
+
+</body>
+</html>
